@@ -1,0 +1,13 @@
+.container {
+    padding: 10px;
+}
+
+.rule-panel + .rule-panel {
+    margin-top: 15px;
+}
+
+:host ::ng-deep .p-panel-content {
+    padding: 5px;
+    background-color: #595959;
+}
+

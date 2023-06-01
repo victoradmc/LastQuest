@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               HP, MP e IP
+            </ng-template>
+            <span>
+                Cada personagem tem HP, MP e IP.
+                <ul>
+                    <li>HP é a vida do seu personagem, os Health Points or Hit Points.</li>
+                    <li>MP é a mana do personagem, os Mana Points ou Magic Points.</li>
+                    <li>IP é o inventário e a capacidade de criação do personagem, os Inventory Points.</li>
+                </ul>
+            </span> 
+        </p-panel>
+    </div>
+
+    
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Calculando Vida e Mana
+            </ng-template>
+            <span>
+                Para calcular, use as seguintes fórmulas:
+                <ul>
+                    <li>Seu HP é: Nível de personagem + 5x [FOR].</li>
+                    <li>Seu estado de crise se inicia quando o HP chegar na metade.</li>
+                    <li>Seu MP é: Nível de personagem + 5x [VONT]</li>
+                    <li>Seu IP é: 6.</li>
+                </ul>
+            </span> 
+        </p-panel>
+    </div>
+    
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Defesa, Defesa mágica e iniciativa
+            </ng-template>
+            <span>
+                Para calcular, use as seguintes fórmulas:
+                <ul>
+                    <li>Sua defesa é igual seu dado de [DES].</li>
+                    <li>Sua defesa mágica é igual seu dado de [INT]</li>
+                    <li>Sua iniciative é 0.</li>
+                </ul>
+                Outros valores serão adicionados de acordo com seus equipamentos.
+            </span> 
+        </p-panel>
+    </div>
+    
+</div>

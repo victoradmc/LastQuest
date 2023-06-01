@@ -1,0 +1,106 @@
+<div class="container">
+
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Funcionamento 
+            </ng-template>
+            <span>
+                Ações e jogadas durante o jogo que sejam de complexidade maior requerem testes.
+                <br>
+                Estes testes são rolagens de dados baseados nos atributos chave do personagem:
+                <ul>
+                    <li>Força</li>
+                    <li>Destreza</li>
+                    <li>Intelecto</li>
+                    <li>Vontade</li>
+                </ul>
+                E serão necessários quando as regras indicarem ou quando o Mestre de jogo solicitar um teste.
+            </span> 
+        </p-panel>
+    </div>
+
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Fórmulas
+            </ng-template>
+            <span>
+                Testes sempre pedem que 2 atributos sejam rolados. Por exemplo, um teste de [INT] + [VONT] será efetuado rolando os respectivos
+                dados desses atributos para determinado personagem.
+            </span> 
+        </p-panel>
+    </div>
+
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Bônus e penalidades
+            </ng-template>
+            <span>
+                Se necessário, sejam pelas circuntânceas ou por decisão do Mestre, testes podem ter bônus e penalidades, que serão adicionados e subtraídos das rolagens de dados.
+                <br>
+                Exemplos:
+                <ul>
+                    <li>[INT] + [VONT] + 5</li>
+                    <li>[FOR] + [DES] - 3</li>
+                </ul>
+            </span> 
+        </p-panel>
+    </div>
+
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Nomenclaturas
+            </ng-template>
+            <span>
+                <ul>
+                    <li>Modificador: Os bônus e penalidades de um teste.</li>
+                    <li>Resultado: O número final, após adicionar os modificadores.</li>
+                    <li>Nível de Dificuldade / ND: O número a ser alcançado pelo teste. O resultado, para ser positivo, deve ser maior ou igual o ND.</li>
+                    <li>Maior rolagem / MR: O maior número entre os dados, sem aplicar modificadores.</li>
+                </ul>
+            </span> 
+        </p-panel>
+    </div>
+
+    
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Críticos
+            </ng-template>
+            <span>
+                Sempre que dois dados tiverem o mesmo número na rolagem, e o número for 6 ou mais, o resultado é um sucesso crítico.
+                <br>
+                Se você rolou um sucesso crítico, sua ação sempre será um sucesso e você ganha pontos de Oportunidade.
+                <br>
+                Se 2 dados resultarem em 1 nas rolagens, isso é uma falha crítica e dará um ponto de Oportunidade para o oponente.
+                <br>
+                Ao ter uma falha crítica, o jogador automaticamente ganha 1 Fabula Point.
+            </span> 
+        </p-panel>
+    </div>
+
+    <div class="rule-panel">
+        <p-panel >
+            <ng-template pTemplate="header">
+               Tabela de Oportunidades
+            </ng-template>
+            <p-table [value]="opportunities" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                </ng-template>
+                <ng-template pTemplate="body" let-opportunity>
+                    <tr>
+                        <td>{{opportunity.name}}</td>
+                        <td>{{opportunity.description}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-panel>
+    </div>
+</div>

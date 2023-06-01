@@ -1,0 +1,152 @@
+<div class="container">
+    <p-card header="Elementalista" subheader="Mago de batalha / lâmina arcana" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/elementalist.jpg">
+        </ng-template>
+        
+        <p>
+            O elementalista aprendeu a canalizar o poder dos quatro elementos: Ar, água, terra e fogo.
+            <br>
+            Alguns desenvolvem feitiços complexos e poderosos que manipulam as forças elementais - outros mesclam seus poderes
+            com artes de batalha e desenvolvem estilos únicos de luta.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu MP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer rituais da disciplina Ritualismo.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Cataclisma [^3]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Ao conjurar uma habilidade instantânea, se tiver um foco arcano equipado, você pode aumentar o custo da habilidade em [ NH ] X 10 MP.
+            Isso também aumentará o dano da habilidade em 5 pontos para cada 10 MP extra que você gastou.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Magia Elemental [^10]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Cada vez que adquirir essa habilidade, aprenda uma nova magia de elementalista.
+            <br>
+            Suas magias de elementalista usam [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Artilharia Mágica [^3]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Se você conjurar uma magia ofensiva, você pode adicionar [ NH ] X 2 para o teste.
+            Use apenas se possuir um foco arcano equipado.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Ritualismo elemental" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode performar rituais da disciplina Elementalismo. Use [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Lâmina Arcana [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sempre que usar uma magia ofensiva em uma única criatura, se a magia tiver um custo total de MP
+            de até [ NH ] X 10 e você estiver usando um arco, arma de punho, adaga, flail, lança ou espada, você pode escolher uma dessas armas.
+            Depois de fazer isso, o teste para conjurar a magia usará o teste de acerto da arma.
+            <br>
+            Exemplo: se usar uma espada de bronze, o teste de conjuração será [DES + FOR] +1.
+        </p>
+    </p-card>
+    <hr>
+    <h1>Lista de magias</h1>
+    <br>
+    <p-card header="Escudo Elemental" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Escolha um elemento entre Terra, fogo, ar, água, gelo e raio. Os alvos ganham resistência contra aquele elemento.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arma Elemental" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você encanta sua arma com energia elemental. Escolha um elemento entre Terra, fogo, ar, água, gelo e raio.
+            Enquanto a arma estiver encantanda, seu dano terá o tipo do elemento escolhido.
+            <br>
+            Se você tiver a arma equipada quando conjurar essa magia, poderá fazer um ataque livre.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Labaredas (*)" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura uma língua de fogo na direção do inimigo, causando [MR + 25] de dano de fogo, ignorando resistências.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Relâmpago (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura um relâmpago na direção dos inimigos, causando [MR + 15] de dano de raio em cada.
+            <br>
+            Oportunidade: Os alvos dessa magia ficam atordoados.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Congelar (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura um manto de gelo nos inimigos, causando [MR + 15] de dano de gelo em cada.
+            <br>
+            Oportunidade: Os alvos dessa magia ficam lentos.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Estacas gélidas (*)" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você lança estacas de gelo afiadas no alvo, causando [MR + 25] de dano de gelo e ignorando resistências.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Prisão ígnea (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura um círculo de fogo nos inimigos, causando [MR + 15] de dano de fogo em cada.
+            <br>
+            Oportunidade: Os alvos dessa magia ficam abalados.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Vento uivante" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você chama pelos ventos para te auxiliarem em batalha, e pode realizar um ataque livre com uma arma corpo-a-corpo.
+            <br>
+            Esse ataque pode ter como alvo criaturas voadoras, e elas cairão e perderão a propriedade voadora.
+            <br>
+            Se você estiver usando uma arma de punho ou lança, cause +5 de dano.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Abalo sísmico (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            A terra se move e quebra abaixo dos alvos, abrindo uma fenda e causando [MR + 15] de dano.
+            <br>
+            Essa magia não pode ter como alvo criaturas voadoras.
+            <br>
+            Oportunidade: cada alvo atingido por essa habilidade perde 1 ação no próximo turno.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Raio (*)" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Um poderoso raio que cai do céu no alvo dessa habilidade, causando [MR + 25] de dano de raio.
+            Ignore resistências.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Lâminas eólicas (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            O vento se molda e atinge o alvo como uma lâmina, causando [MR + 15] de dano de ar.
+            <br>
+            Oportunidade: Caso atinja criaturas voadoras, e elas cairão e perderão a propriedade voadora.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Vortex" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você fica rodeado por um vórtex de ar, ricocheteando projéteis.
+            Ganhe +2 de bonus de defensa contra ataques à distância.
+        </p>
+    </p-card>
+</div>

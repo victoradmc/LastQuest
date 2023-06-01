@@ -1,0 +1,186 @@
+<div class="container">
+    <p-card header="Summoner" subheader="Invocador / Arcanista" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/summoner.jpg">
+        </ng-template>
+        
+        <p>
+            O summoner, ou invocador, é capaz de invocar espíritos chamados de ARCANA para melhorar suas habilidades
+            e conceder poderes únicos. Eles usam sua conexão com esses seres para manifestar sua presença e poder no mundo material,
+            conectando seu corpo e alma à outros planos e adquirindo forças sobrenaturais.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu MP em 5 pontos permanentemente.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Círculo Arcano [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Depois de liberar um arcanum no seu turno durante um conflito, se o arcanum não houver sido sumonado no mesmo turno e você
+            tiver uma arma arcana equipada, você imediatamente ganha a ação <strong>Habilidade</strong> de graça. 
+            <br>
+            O custo da habilidade ou feitiço deve ser de MP total [ NH ] X 5 ou menor.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Regeneração Arcana [^2]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Quando summonar um arcanum, você imedietamente recupera [ NH ] X 5 de HP.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Vínculo Arcano" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode vincular uma arcana na sua alma e invocá-la depois.
+            <br>
+            O mestre vai te dar detalhes de como o ritual de vinculo funciona, mas você deve usar uma ação e gastar 40 MP para 
+            invocar.
+            <br>
+            Se você adquiriu essa habilidade durante a criação de personagem, você pode escolher uma Arcana pra começar vinculada.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana de emergência [^6]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Se você estiver em crise, o custo para summonar é reduzido em [ NH ] X 5 MP
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Ritualismo Arcano" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode fazer rituais da disciplina Arcana, contanto que o efeito esteja de acordo com uma arcana que você esteja vinculado.
+            <br>
+            O teste para estes rituais é de [ VONT ] + [ VONT ].
+        </p>
+    </p-card>
+    <hr>
+    <p-panel >
+        <ng-template pTemplate="header">
+           Invocando e liberando arcanas
+        </ng-template>
+        <span>
+           Ao summonar, você ganha o bônus de Invocação daquele Arcanum. Ao liberar, ganha o efeito de liberação.
+           <br>
+           Você só pode ter 1 arcanum ativo por vez.
+        </span> 
+    </p-panel>
+    <hr>
+    <h1>Arcanas</h1>
+    <br>
+    <p-card header="Arcana da Forja" subheader="Domínio: Fogo, Metal, calor" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna resistente à dano de fogo, e seu dano de fogo ignora resistências.
+            <br><br>
+            Liberar, escolha 1: 
+        </p>
+        <ul>
+            <li>Forja - você cria um item básico como armadura, escudo ou arma de sua escolha, e seu dano é de fogo e não físico. Apenas 1 item ativo por vez.</li>
+            <li>Inferno - Escolha qualquer número de criaturas que pode ver: cada uma toma 30 pontos de dano de fogo, ignorando resistência.</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Arcana de gelo" subheader="Domínio: Frio, gelo, silêncio" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna resistente à dano de gelo, e imune à se tornar enraivecido. Seu dano de gelo ignora resistência.
+            <br><br>
+            Liberar: 
+            <br>
+            Escolha qualquer número de criaturas que pode ver: cada uma toma 30 pontos de dano de gelo, ignorando resistência.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana do vazio" subheader="Domínio: dimensão, vácuo, vazio" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna resistente à dano de trevas, e ganha +1 de defesa mágica.
+            <br><br>
+            Liberar, escolha 1: 
+        </p>
+        <ul>
+            <li>Oblivio - Escolha qualquer número de criaturas que pode ver: cada uma toma 30 pontos de dano de trevas, ignorando resistência.</li>
+            <li>Portão dimensional - Você teletransporta você e até 5 aliados para um local conhecido que fique até 1 dia de distância.</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Arcana do grimório" subheader="Domínio: conhecimento, revelações, estudo" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna apto à ler, escrever, e entender qualquer idioma. Sua [ INT ] aumenta em 1 dado.
+            <br><br>
+            Liberar: 
+            <br>
+            Oráculo - Você pode fazer uma única pergunta para o Mestre, que deverá ser respondida, mostrando o que você encontrou em grimórios antigos.
+            <br>
+            Essa opções só pode ser usada 1 vez ao dia, e a mesma pergunta não deve ser feita com frequência.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana do carvalho" subheader="Domínio: Terra, plantas, veneno" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna resistente à Terra e imune à venenos. Sempre que se curar, ganhe 5 HP extra.
+            <br><br>
+            Liberar: 
+            <br>
+            Florescer - Escolha qualquer número de criaturas que consiga ver. Elas se curam de efeitos de veneno e recuperam 40 HP.
+            <br>
+            Esse efeito aumenta para 50 HP no nível 20 e 60 HP no nível 40.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana da tempestade" subheader="Domínio: Chuva, raio, névoa" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você se torna resistente à Ar e Raio. Você pode prever o clima para os próximos 2 dias.
+            <br><br>
+            Liberar: 
+            <br>
+            Tempestade de raios - Escolha um número qualquer de criaturas que pode ver. Cada uma toma 30 pontos de dano de raio, ignorando a resistência.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana da lâmina" subheader="Domínio: conquista, heroismo, liderança" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Seu ataque fisico é aumentado em 5 pontos. Todos os seus ataques são considerados como tendo nenhum tipo (sem fraqueza ou resistência) e não
+            podem ganhar tipos.
+            <br>Você pode dar a propriedade Multi para um ataque, e isso fará com que o Arcana seja liberado.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana da torre" subheader="Domínio: proteção, sacríficio" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Escolha um tipo de dano - Ar, Raio, Trevas, Terra, Fogo ou Gelo. Quando este arcana for liberado, seus aliados ganharão resistência ao tipo escolhido.
+            <br><br>
+            Liberar: 
+            <br>
+            Julgamento - Escolha um número qualquer de criaturas que pode ver. Eles sofrem 30 de dano de luz, ignorando resistência.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arcana do relógio" subheader="Domínio: destino, velocidade, tempo" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Invocar: 
+            <br>
+            Você é imune à lentidão e ganha +1 de bônus de defesa.
+            <br><br>
+            Liberar: 
+            <br>
+            Congelar o tempo - Escolha qualquer número de criaturas que pode ver. Cada uma sofre Lentidão - se a criatura já estiver com lentidão,
+            ele perde 1 ação no próximo turno.
+        </p>
+    </p-card>
+
+
+</div>

@@ -1,0 +1,162 @@
+<div class="container">
+    <p-card header="Astromante" subheader="Mago  do chaos / Mago da Entropia" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/astromancer.jpg">
+        </ng-template>
+        
+        <p>
+            Além das estrelas, onde a luz não brilha, existe um vazio onde as almas murcham e definham.
+            É neste lugar de não-realidade e caos inerente que os astromantes estudam e usam para canalizar magias.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu MP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer rituais da disciplina Ritualismo.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Absorver Mana [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Depois de sofrer dano, recupere [ NH ] X 2 MP.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Magia do Caos [^10]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Cada vez que adquirir essa habilidade, aprenda uma nova magia de astromante.
+            <br>
+            Suas magias de astromante usam [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Manipular a sorte" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Todo início de sessão, seu número da sorte se torna 7. Uma vez por cena, você pode substituir
+            um número de uma rolagem pelo seu número da sorte. Se o fizer, o número substituído se torna o novo número da sorte.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Ritualismo entrópico" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode performar rituais da disciplina Entropia. Use [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Manipular o caos [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Durante um conflito, você pode usar uma ação para interferir no que acontece e gastar [ NH ] X 5 MP.
+            <br>
+            Pra cada 5 MP gasto assim, escolha:
+        </p>
+        <ul>
+            <li>Uma criatura se recupera de um efeito negativo.</li>
+            <li>Uma criatura pode trocar de items ou equipamentos sem gastar uma ação.</li>
+            <li>Um aliado seu, que ainda não tenha agido neste turno, agirá logo após você.</li>
+        </ul>
+    </p-card>
+    <hr>
+    <h1>Lista de magias</h1>
+    <br>
+    <p-card header="Aceleração" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você dobra o tecido do tempo. Até o fim dessa cena, o alvo ganha a habilidade de fazer uma ação livre extra
+            em seu respectivo turno.
+            <br>
+            Essa magia termina após o alvo realizar 2 ações.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Anomalia (*)" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você manipula a matéria da criatura alvo, trocando sua imunidade ou absorção de um elemento para fraqueza.
+            <br>
+            Após o dano ter sido aplicado, essa magia termina.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arma do vazio" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sua arma ganha a propriedade Trevas. Se você conjurar essa habilidade em uma arma equipada, 
+            faça um ataque livre.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Desencantar" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura uma onda de energia negativa e tira todos os efeitos mágicos de uma criatura.
+    </p-card>
+    <br>
+    <p-card header="Dobra do tempo" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você vê o futuro próximo. Até o fim da cena, depois que uma criatura fizer um teste e não for
+            um sucesso crítico ou falha crítica, você pode forçar aquela criatura à refazer a rolagem.
+            <br>
+            Depois que 2 rolagens forem refeitas, essa habilidade termina.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Drenar a mente (*)" subheader="MP: 5" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você drena a mente de uma criatura, causando [ MR ] + 15 de dano no MP do alvo, e recuperando a mesma quantidade.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Drenar a o corpo (*)" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você drena a saúde de uma criatura, causando [ MR ] + 15 de dano de trevas e recuperando a mesma quantidade.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="C.A.O.S." subheader="MP: até 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você invoca um vortex de energia caótica. Role seu dado de [VONT] pra cada 10 de MP gasto.
+            <br>
+            Escolha apenas 1 dos resultados, e aplique o efeito:
+        </p>
+        <ul>
+            <li>1: Você perde metade do HP e MP.</li>
+            <li>2-3: Cada criatura presente, inclusive você, fica envenenado.</li>
+            <li>4-6: Cada criatura presente, inclusive você, fica lento.</li>
+            <li>7-8: Escolhe até 3 criaturas: cada uma delas recuperam 50 HP e se curam de qualquer estado.</li>
+            <li>
+                9+: Escolha qualquer número de criaturas: cada uma delas sofre 30 de dano. Determina o dano rolando 1d6:
+                <ul>
+                    <li>1: Ar</li>
+                    <li>2: Raio</li>
+                    <li>3: Trevas</li>
+                    <li>4: Terra</li>
+                    <li>5: Fogo</li>
+                    <li>6: Veneno</li>
+                </ul>
+            </li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Espelho" subheader="MP: 10 " [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você distorce as leis da magia. Até o final do efeito, se uma magia ofensiva (*) for conjurada
+            no alvo, a criatura atacante sofrerá o efeito da magia. Ocorre apenas 1 vez.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Omega (*)" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você invoca o poder do vazio no seu alvo, trocando suas forças e fragilidades. O alvo
+            perde uma quantidade de HP igual a [20 + metade do nível do alvo]
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Torpor (*)" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você prende o alvo em um círculo de inexistência, fazendo com que ele perca 1 ação do seu próximo turno.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Umbra (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Uma tempestade de matéria escura caysa [ MR + 15 ] de dano de trevas em cada alvo.
+            <br>
+            Oportunidade: Os alvos ficam enfraquecidos.
+        </p>
+    </p-card>
+</div>

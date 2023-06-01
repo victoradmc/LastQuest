@@ -1,0 +1,57 @@
+<div class="container">
+    <p-card header="Monge" subheader="Artista Marcial / Lutador" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/monk.jpg">
+        </ng-template>
+        
+        <p>
+            Monges são guerreiros milenras, disciplinados e obstinados em atingir a perfeição: seja ela física ou espiritual.
+            Através de treinamento rígido e duras batalhas, os monges controlam suas emoções e energia, combinando-as com artes marciais.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu HP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer uso de armas marciais de curta distância e armaduras marciais.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Adrenalina [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Se estiver em estado de crise, você causa [ NH ] X 2 de dano em ataques e habilidades.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Fúria" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Seus testes de acerto com armas de punho, adagas, flail e armas de arremesso são um crítico
+            sempre que os 2 dados tiverem o mesmo número, mesmo que menor que 6.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Espírito indomável [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sempre que gastar 1 ou mais Fabula Points, você ganha um benefício adicional:
+        </p>
+        <ul>
+            <li>Recupera [ NH ] X 5 de HP</li>
+            <li>Recupera [ NH ] X 5 de MP</li>
+            <li>Se Recupera de uma condição</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Provocar [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode usar uma ação e 5 MP pra fazer um teste oposto de [FOR + VONT] contra uma criatura.
+            Se você vencer, você atrai a atenção dela, que se torna enraivecida e é obrigada a focar
+            a atenção apenas em você. Você ganha um bônus igual a [ NH ] para este teste.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Disciplina de ferro [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Quando você realizar a ação de proteger, caso não esteja protegendo outra criatura,
+            você recupera HP igual a [ NH ] X [ Maior número entre seus laços ]. Escolha [FOR] ou [VONT],
+            este atributo se torna 1 dado maior até seu próximo turno.
+        </p>
+    </p-card>
+</div>

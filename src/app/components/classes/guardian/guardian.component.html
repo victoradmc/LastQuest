@@ -1,0 +1,56 @@
+<div class="container">
+    <p-card header="Guardião" subheader="Protetor / Paladino" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/guardian.jpg">
+        </ng-template>
+        
+        <p>
+            Guardiões são guerreiros orgulhosos e altruítas, cujo estilo de luta consiste em defender aliados.
+            Estão dispostos à se sacrificar pelo bem de seus companheiros, 
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu HP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer uso de escudos marciais e armaduras marciais.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Guarda Costas" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Se você fizer a ação de proteger e proteger outra criatura, aquela criatura ganha resistência
+            à todo tipo de dano até o inicio do seu próximo turno.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Maestria defensiva [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Enquanto você tiver um escudo ou armadura equipados, todo dano que você recebe é reduzido em [ NH ].
+            Aplique isso ANTES de fraqueza e resistência.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Escudo duplo" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode equipar outro escudo na sua mão principal. Enquanto carregar 2 escudos,
+            você ganha os benefícios dos dois e pode tratar ambos combinados como uma arma marcial:
+            <br>
+            <br>
+            Escudos gêmeos - Acerto: [FOR + FOR] | Dano: [MR] + 5
+            <br>
+            Dano extra de acordo com a sua [NH] de maestria defensiva.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Fortaleza [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Permanentemente aumente seu HP em [NH] X 3.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Proteger" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Quando outra criatura for ameaçada por um ataque ou magia, você toma o lugar dela em receber o dano.
+            Se o dano ou ataque já te afetaria, afeta você 2x.
+        </p>
+    </p-card>
+</div>
