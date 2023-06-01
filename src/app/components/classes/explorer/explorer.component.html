@@ -1,0 +1,63 @@
+<div class="container">
+    <p-card header="Explorador" subheader="Aventureiro / Caçador de tesouros" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/explorer.jpg">
+        </ng-template>
+        
+        <p>
+            Os exploradores procuram por aventuras e desafios além das fronteiras das cidades - geralmente estão
+            querendo encontrar novos mundos, continentes e provar se as histórias que ouviram são verdadeiras ou não.
+            Muitos buscam caçar tesouros e lendas, mas todos eles tem algo em comum: O espírito de aventura.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu IP em 5 pontos permanentemente.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Fiel Companheiro [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você possui um companheiro que é uma besta, construto, elemental ou planta de nível 5.
+            Essa criatura não possui iniciativa e não sobe de nível, mas pode realizar 2 ataques básicos.
+            <br>
+            O bônus de testes dessa criatura é [ NH ], e o HP é [ NH ] X [FOR] + Metade do seu nível.
+            <br>
+            Esta criatura não possui turno, mas você pode usar 1 ação para ordenar um ataque ou similar.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Recursos [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você recupera [ NH ] IP a cada teste relacionado à viagens ou aventuras.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Papo de taverna [^3]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sempre que estiver em uma taverna, casa de descanso ou guilda, você pode fazer [ NH ]
+            perguntas para o mestre sobre os arredores e as pessoas, que devem ser respondidas.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Caça ao tesouro [^2]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sempre que estiverem fazendo uma viagem ou explorando uma área, você pode fazer uma descoberta.
+            Para isso, role um teste de exploração de acordo com a área, e o resultado deve ser menor ou igual
+            a [ NH + 1]:
+        </p>
+        <ul>
+            <li>Cidades, vilarejos e área seguras: d6</li>
+            <li>Planíces, rotas vigiadas e estradas: d8</li>
+            <li>Florestas, colinas e rios: d10</li>
+            <li>Florestas, montanhas, mar aberto, pântanos: d12</li>
+            <li>Desertos, tundras, selvas, vulcões e lugares congelados: d20</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Alma nômade" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você aumenta o dado de testes em 1, quando relacionados à viagens e explorações.
+            <br>
+            Você reduz o dado de [ Caça ao Tesouro ] em 1.
+        </p>
+    </p-card>
+</div>

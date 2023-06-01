@@ -1,0 +1,151 @@
+<div class="container">
+    <p-card header="Curandeiro" subheader="Sacerdote / Místico" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/priest.jpg">
+        </ng-template>
+        
+        <p>
+            Curandeiros desenvolveram uma conexão profunda com magias de cura e recuperação, além de estudar
+            os mistérios da vida e da morte. Eles manipulam energias essenciais à vida, e embora não seja uma regra,
+            muitos estão ligados à ordens religiosas.
+
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu MP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer rituais da disciplina Ritualismo.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Poder de cura [^2]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Ao conjurar uma habilidade que tenha aliados como alvo, se você estiver usando um equipamento
+            de foco arcano, os aliados alvo recuperam HP igual à [ NH ] X Número de Laços que você possui.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Ritualismo espiritual" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode realizar rituais da disciplina "Espiritualismo". Use [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Magia espiritual [^10]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Cada vez que adquirir essa habilidade, aprenda uma magia de curandeiro.
+            <br>
+            Magias ofensivas usam [INT + VONT].
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Suporte místico" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Ao conjurar uma habilidade que tenha aliados como alvo, se você estiver usando um equipamento
+            de foco arcano, escolha um aliado que você possua um vínculo.
+            <br>
+            Aquele aliado ganha um bônus em sua próxima rolagem igual à força do laço entre vocês.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Albus Mysticae" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Se você não tiver MP suficiente pra conjurar uma magia, pode escolher gastar HP para fazê-lo.
+            Ao fazer isso, gaste o dobro de HP.
+        </p>
+    </p-card>
+    <hr>
+    <h1>Lista de magias</h1>
+    <br>
+    <p-card header="Aura" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você projeta sua alma fora de seu corpo em direção aos alvos, criando um escudo de proteção contra 
+            forças mágicas. Até o fim da cena, cada alvo trata sua defesa mágica como 12.
+            <br>
+            Se a defesa mágica do alvo for maior que 12, use-a normalmente.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Despertar místico" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você canaliza a energia do alvo e o ajuda à superar seus limites.
+            Escolha um atributo - até o fim da magia, o alvo trata este atributo como sendo um dado maior.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Escudo de luz" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você conjura uma barreira física em volta dos alvos, criando uma proteção contra ataques físicos.
+            Até o fim da cena, cada alvo trata sua defesa como 12.
+            <br>
+            Se a defesa do alvo for maior que 12, use-a normalmente.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Purificar" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você purifica o ar e as criaturas alvo, fazendo-os se curarem instantâneamente dos efeitos de status.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Ferver o sangue (*)" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você retira energia positiva do corpo do alvo, fazendo-o entrar em raiva.
+            <br>
+            Durante o próximo turno eles não podem conjurar magias ou usar a ação de proteger.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Alucinação (*)" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você altera os sentidos dos alvos, causando alucinações em todos os seus sentidos.
+            <br>
+            Escolha Abalado ou Confuso, e inflija este status em cada um dos alvos.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Curar" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Sua força mística é projetada e ajuda seus aliados ou alvos à recuperarem de danos e cansaço.
+            <br>
+            Cada alvo recupera 40 HP. Este valor sobre pra 50 HP no nível 20 e 60 HP no nível 40.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Lux (*)" subheader="MP: 10 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você foca sua energia mística em criar um raio de luz espiritual. Cada alvo sofre [ MR ] + 15 de dano de luz.
+            <br>
+            Oportunidade: Cada alvo atingido fica confuso.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Misericórdia" subheader="MP: 20" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            O coração de uma criatura se torna mais forte, aumentando sua capacidade contra sofrimento e desespero.
+            <br>
+            Até o fim da magia, se aquele alvo fosse reduzido à 0 HP, ele fica com 1 HP. Este efeito só acontece 1 vez.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Reforçar" subheader="MP: 5 por alvo, máx 3 alvos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você protege os alvos de ataques que poderia alterar seu corpo ou espírito.
+            Escolha um status entre confuso, enraivecido, abalado, lento ou enfraquecido - até o fim da magia,
+            cada alvo é imune à este status.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Arma Mística" subheader="MP: 10" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Uma arma à sua escolha é imbuida de energia mística, e seu dano se torna de luz.
+            Se essa arma estiver equipada por você, você pode realizar um ataque livre.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Hex" subheader="MP: 5 por alvo, máx 3 alvos"  [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Um campo de energia negativa é criado através da remoção de toda energia positiva no local.
+            Escolha um status - os alvos são aflingidos por esse status automaticamente.
+        </p>
+    </p-card>
+</div>

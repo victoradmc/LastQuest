@@ -35,7 +35,8 @@ export class HeaderMenuComponent implements OnInit {
                     {
                         label: 'Relógios de progresso', 
                         icon: 'pi pi-fw pi-clock',
-                        routerLink: '/clocks'
+                        routerLink: '/clocks',
+                        disabled: true
                     },
                     {
                         label: 'Fabula & Ultima Points', 
@@ -45,7 +46,8 @@ export class HeaderMenuComponent implements OnInit {
                     {
                         label: 'Conflitos e Batalha', 
                         icon: 'pi pi-fw pi-shield',
-                        routerLink: '/conflicts'
+                        routerLink: '/conflicts',
+                        disabled: true
                     },
                     {
                         label: 'Ações', 
@@ -72,16 +74,16 @@ export class HeaderMenuComponent implements OnInit {
                             { label: 'Astromante', routerLink: '/astromancer' },
                             { label: 'Monge', routerLink: '/monk' },
                             { label: 'Guardião', routerLink: '/guardian' },
-                            { label: 'Menestrel', routerLink: 'help' },
-                            { label: 'Orador', routerLink: 'help' },
-                            { label: 'Ladino', routerLink: 'help' },
-                            { label: 'Caçador', routerLink: 'help' },
-                            { label: 'Espiritualista', routerLink: 'help' },
-                            { label: 'Explorador', routerLink: 'help' },
-                            { label: 'Guerreiro', routerLink: 'help' },
+                            { label: 'Sábio', routerLink: '/scholar' },
+                            { label: 'Bardo', routerLink: '/bard' },
+                            { label: 'Ladino', routerLink: '/rogue' },
+                            { label: 'Caçador', routerLink: '/hunter' },
+                            { label: 'Sacerdote', routerLink: '/priest' },
+                            { label: 'Explorador', routerLink: '/explorer' },
+                            { label: 'Duelista', routerLink: '/duelist' },
                         ]
                     },
-                    {label: 'Equipamento', icon: 'pi pi-fw pi-shopping-cart'},
+                    {label: 'Equipamento', icon: 'pi pi-fw pi-shopping-cart', routerLink: '/equipment'},
                 ]
             },
             {
@@ -90,11 +92,13 @@ export class HeaderMenuComponent implements OnInit {
                 items: [
                     {label: 'Escudo do Mestre', icon: 'pi pi-fw pi-image'},
                     {label: 'Escudo do Jogador', icon: 'pi pi-fw pi-id-card'}
-                ]
+                ],
+                disabled: true
             },
             {
-                label: 'Help',
-                routerLink: 'help'
+                label: 'Sobre',
+                icon: 'pi pi-fw pi-box',
+                routerLink: '/help'
             },
         ]
     }

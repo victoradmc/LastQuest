@@ -38,6 +38,14 @@ import { ElementalistComponent } from './components/classes/elementalist/element
 import { AstromancerComponent } from './components/classes/astromancer/astromancer.component';
 import { MonkComponent } from './components/classes/monk/monk.component';
 import { GuardianComponent } from './components/classes/guardian/guardian.component';
+import { ScholarComponent } from './components/classes/scholar/scholar.component';
+import { BardComponent } from './components/classes/bard/bard.component';
+import { RogueComponent } from './components/classes/rogue/rogue.component';
+import { HunterComponent } from './components/classes/hunter/hunter.component';
+import { PriestComponent } from './components/classes/priest/priest.component';
+import { ExplorerComponent } from './components/classes/explorer/explorer.component';
+import { DuelistComponent } from './components/classes/duelist/duelist.component';
+import { EquipmentComponent } from './components/equipment/equipment.component';
 
 
 @NgModule({
@@ -61,7 +69,15 @@ import { GuardianComponent } from './components/classes/guardian/guardian.compon
     ElementalistComponent,
     AstromancerComponent,
     MonkComponent,
-    GuardianComponent
+    GuardianComponent,
+    ScholarComponent,
+    BardComponent,
+    RogueComponent,
+    HunterComponent,
+    PriestComponent,
+    ExplorerComponent,
+    DuelistComponent,
+    EquipmentComponent
   ],
   imports: [
     BrowserModule,

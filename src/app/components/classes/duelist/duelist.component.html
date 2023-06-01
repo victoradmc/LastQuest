@@ -1,0 +1,65 @@
+<div class="container">
+    <p-card header="Duelista" subheader="Ronin / Espadachim" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/duelist.jpg">
+        </ng-template>
+        
+        <p>
+            Depois de anos e anos de treinamento em combate corpo-a-corpo, duelistas tem uma Habilidade
+            excepcional em lâminas e armas de combate próximo.
+            <br>
+            Alguns fazem parte de exércitos ou guildas, outros vagam sozinhos atrás de seus próprios própositos.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu HP em 5 pontos permanentemente.
+            <br>
+            Você pode fazer usar armas marciais de curta distância e escudos marciais.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Tempestade de lâminas" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Quando fizer um ataque corpo-a-corpo, você pode gastar 10 MP.
+            Se o fizer, escolha 1:
+        </p>
+        <ul>
+            <li>O ataque ganha multi(2)</li>
+            <li>Se o ataque já tiver Multi(2), ganha Multi(3)</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Esmaga ossos [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Quando você acertar 1 ou mais alvos com ataques físicos que dariam dano, você
+            pode escolher que o ataque não dê dano algum. Se fizer isso, escolha entre Confuso
+            ou Enfraquecido, e o alvo ganha aquele status ou perde 10 MP.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Brechas no combate [^3]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você pode usar uma ação e 5 MP para fazer um ataque livre com uma arma corpo-a-corpo.
+            Este ataque precisa ser feito em uma única criatura. Se o ataque tiver sucesso, ele não 
+            causa dano mas você pode escolher 1:
+        </p>
+        <ul>
+            <li>Destrói o escudo do oponente.</li>
+            <li>Destrói a armadura do oponente.</li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Contra-ataque" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Depois que uma criatura te acertar ou errar um ataque, se o resultado do teste de acerto
+            tiver sido um número par, você pode fazer um ataque livre contra a criatura.
+            <br>
+            Este ataque precisa ser corpo-a-corpo e precisa ter a criatura como único alvo. Sua [ MR ] é contada como 0.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Mestre das armas [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você adiciona [ NH ] para testes de acerto com armas corpo-a-corpo.
+        </p>
+    </p-card>
+</div>

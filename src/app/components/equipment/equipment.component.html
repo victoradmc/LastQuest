@@ -1,0 +1,32 @@
+<div class="container">
+    <p-card header="Equipament inicial" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Cada personagem começa o jogo com 500 Zenit para comprar seu equipamento inicial. Além disso,
+            depois de comprar o equipamento que precisa, role 2d6 X 10 para saber seu dinheiro inicial.
+        </p>
+    </p-card>
+    <hr>
+    <h1>Lista de Armas</h1>
+    <div *ngFor="let weapon of weapons" class="item-card">
+        <p-card header="{{ weapon.name }}" subheader="Custo: {{ weapon.cost }}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <p>
+                <img src='../../../assets/items/{{ weapon.img }}.png' class="item-img">
+                <span class="item-desc">
+                    Acerto: {{ weapon.accuracy }}  | Dano: {{ weapon.damage }}
+                </span>
+            </p>
+        </p-card>
+    </div>
+    <hr>
+    <h1>Lista de Armaduras</h1>
+    <div *ngFor="let armor of armors" class="item-card">
+        <p-card header="{{ armor.name }}" subheader="Custo: {{ armor.cost }}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <p>
+                <img src='../../../assets/items/{{ armor.img }}.png' class="item-img">
+                <span class="item-desc">
+                    Def: {{ armor.defense }}  | Def. M: {{ armor.mdefense }} | In: {{ armor.initiative }}
+                </span>
+            </p>
+        </p-card>
+    </div>
+</div>

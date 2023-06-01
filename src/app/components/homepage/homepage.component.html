@@ -1,3 +1,31 @@
 <div class="container">
-    aaaaaaaaaaaaaaaaaa
+    <p-card header="Bem-vinde!" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Aqui você encontra todas as informações pra jogarmos, finalmente!
+            <br>
+            Existem coisas que não estão aqui, você pode ver no PDF ou perguntar para o narrador.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Criando personagens" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+           Pra criar seus personagens, basta conferir a lista abaixo e depois ir para as respectivas sessões do app:
+        </p>
+        <ol>
+            <li>Pense num personagem ou conceito que você gosta.</li>
+            <li>Defina as características dele, como ele se comporta e seus traços iniciais.</li>
+            <li>Visite a seção de <a [routerLink]="['/stats']">Atributos</a> para definir os do seu personagem.</li>
+            <li>Visite a seção de <a [routerLink]="['/hp-mp-ip']">HP, MP e IP</a> para definir os seus.</li>
+            <li>Defina seus <a [routerLink]="['/traits-bonds']">Laços e Traços.</a>Cada personagem precisa ter pelo menos 1 traço.</li>
+            <li>
+                Cada personagem começa no nível 5. Escolha 2 Classes dentre todas disponíveis:
+                <ul>
+                    <li>Adicione as habilidades automáticas de cada uma das classes.</li>
+                    <li>Distribua seus 5 níveis iniciais entre elas e escolha habilidades e magias.</li>
+                </ul>
+            </li>
+            <li>Escolha seu equipamento inicial na seção de <a [routerLink]="['/equipment']">equipamentos</a>. Você tem 500z pra gastar inicialmente!</li>
+            <li>Não esqueça de anotar seus 3 <a [routerLink]="['/fabula-points']">Fabula Points</a> de começo de jogo.</li>
+        </ol>
+    </p-card>
 </div>

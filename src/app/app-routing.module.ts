@@ -12,6 +12,7 @@ import { ActionsComponent } from './components/actions/actions.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { HpMpIpComponent } from './components/hp-mp-ip/hp-mp-ip.component';
 import { TraitsBondsComponent } from './components/traits-bonds/traits-bonds.component';
+import { EquipmentComponent } from './components/equipment/equipment.component';
 
 import { SummonerComponent } from './components/classes/summoner/summoner.component';
 import { DruidComponent } from './components/classes/druid/druid.component';
@@ -20,6 +21,13 @@ import { ElementalistComponent } from './components/classes/elementalist/element
 import { AstromancerComponent } from './components/classes/astromancer/astromancer.component';
 import { MonkComponent } from './components/classes/monk/monk.component';
 import { GuardianComponent } from './components/classes/guardian/guardian.component';
+import { ScholarComponent } from './components/classes/scholar/scholar.component';
+import { BardComponent } from './components/classes/bard/bard.component';
+import { RogueComponent } from './components/classes/rogue/rogue.component';
+import { HunterComponent } from './components/classes/hunter/hunter.component';
+import { PriestComponent } from './components/classes/priest/priest.component';
+import { ExplorerComponent } from './components/classes/explorer/explorer.component';
+import { DuelistComponent } from './components/classes/duelist/duelist.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -40,6 +48,14 @@ const routes: Routes = [
   { path: 'astromancer', component: AstromancerComponent },
   { path: 'monk', component: MonkComponent },
   { path: 'guardian', component: GuardianComponent },
+  { path: 'scholar', component: ScholarComponent },
+  { path: 'bard', component: BardComponent },
+  { path: 'rogue', component: RogueComponent },
+  { path: 'hunter', component: HunterComponent },
+  { path: 'priest', component: PriestComponent },
+  { path: 'explorer', component: ExplorerComponent },
+  { path: 'duelist', component: DuelistComponent },
+  { path: 'equipment', component: EquipmentComponent },
 ];
 
 @NgModule({

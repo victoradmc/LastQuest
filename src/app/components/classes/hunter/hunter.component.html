@@ -1,0 +1,66 @@
+
+<div class="container">
+    <p-card header="Caçador" subheader="Arqueiro / Atirador / Pistoleiro" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="../../../../assets/classes/hunter.jpg">
+        </ng-template>
+        
+        <p>
+            Caçadores são experts em lidar com ameaças de longe - mas alguns preferem
+            lidar com seus inimigos à queima roupa. Seja como for, a destreza e astúcia
+            desses mestres do disparo estão sempre prontas para acertar o alvo.
+        </p>
+        <ng-template pTemplate="footer">
+            Habilidade automática: Aumente seu HP em 5 pontos permanentemente.
+            <br>
+            Você pode equipar armas marciais de distância e escudos marciais.
+        </ng-template>
+    </p-card>
+    <br>
+    <p-card header="Alvos múltiplos" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+           Quando realizar um ataque à distância, você pode escolher gastar 10 MP.
+           Se o fizer, o ataque ganha Multi(2); Se já possuir, ganha Multi(3).
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Fogo Cruzado" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Depois que uma criatura que você pode ver realizar um ataque à distância,
+            você pode gastar MP para fazer o ataque falhar.
+            <br>
+            A quantidade de MP gasto é igual ao teste de acerto da criatura. Esta Habilidade
+            só pode ser usada se você tiver uma arma à distância equipada, e não funciona
+            caso o teste da criatura tenha sido um sucesso crítico.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Olhos de falcão [^5]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Ao tomar a ação de Proteger, caso você não esteja protegendo outra criatura,
+            você pode escolher:
+        </p>
+        <ul>
+            <li>Seu próximo ataque à distância vai dar [ NH ] X 2 de dano extra.</li>
+            <li>Você imediatamente pode fazer um ataque livre com arco ou pistola, com [ MR ] = 0. </li>
+        </ul>
+    </p-card>
+    <br>
+    <p-card header="Mestre dos disparos [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+            Você tem um bônus de [ NH ] em testes de acerto com armas à distância.
+        </p>
+    </p-card>
+    <br>
+    <p-card header="Disparo de aviso [^4]" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <p>
+           Quando você acertar um ou mais alvos com um ataque à distância que daria dano, você pode
+           escolher que aquele ataque não dê dano algum. Se o fizer, escolha 1:
+        </p>
+        <ul>
+            <li>A criatura está abalada.</li>
+            <li>A criatura está lenta.</li>
+            <li>Cada alvo perde [ NH ] X 10 MP.</li>
+        </ul>
+    </p-card>
+</div>
